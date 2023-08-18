@@ -1,0 +1,167 @@
+#header {
+  background-image: url("../../assets/Makadi_Heights_background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100vh;
+  padding-bottom: 2rem;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 2rem;
+  max-width: 750px !important;
+}
+
+.header__img {
+  max-width: 350px;
+  max-height: 350px;
+}
+
+.header__cta {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.header__info {
+  color: white;
+  max-width: 400px;
+  color: var(--color-white);
+}
+.header__info h3 {
+  font-family: "Diodrum Arabic", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.header__info p {
+  margin: 2rem 0;
+  font-family: "Sharp Sans No1 Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+header button {
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+/* wide screens */
+@media (min-width: 1920px) {
+  .header__container {
+    max-width: 1200px !important;
+  }
+  .header__img {
+    max-width: 550px;
+    max-height: 550px;
+  }
+  .header__info {
+    max-width: 600px;
+  }
+  .header__info h3 {
+    font-family: Diodrum Arabic;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 88px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  .header__info p {
+    font-family: Sharp Sans No1 Medium;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+}
+/* tablets */
+@media (max-width: 1024px) {
+  .header__container {
+    max-width: 90% !important;
+  }
+  .header__img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  .header__info h3 {
+    font-family: Diodrum Arabic;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 44px;
+    letter-spacing: 0px;
+    text-align: left;
+    display: inline-block;
+  }
+
+  .header__info p {
+    font-family: Sharp Sans No1 Medium;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin: 1rem 0;
+  }
+}
+/* phones */
+@media (max-width: 600px) {
+  #header {
+    justify-content: center;
+    align-items: center;
+  }
+  .header__container {
+    flex-direction: column;
+  }
+  .header__img {
+    width: 90vw;
+  }
+  .header__info h3 {
+    font-family: Diodrum Arabic;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 33px;
+    letter-spacing: 0px;
+    text-align: left;
+    display: inline-block;
+  }
+
+  .header__info p {
+    font-family: Sharp Sans No1 Medium;
+    font-size: 9px;
+    font-weight: 300;
+    line-height: 12px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin: 1rem 0;
+  }
+  .header__cta {
+    display: flex;
+    flex-direction: column;
+  }
+  header button {
+    width: 100% !important;
+    height: 2rem;
+  }
+}

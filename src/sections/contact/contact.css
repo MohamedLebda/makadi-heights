@@ -1,0 +1,204 @@
+#contact {
+  padding: 0;
+  margin: 0;
+}
+.contact__container {
+  display: flex;
+  gap: 2rem;
+  width: 95% !important;
+  padding: 0;
+  margin: 0;
+  margin-inline: 0 !important;
+}
+.contact__left {
+  position: relative;
+  display: inline-block;
+}
+.contact__left img {
+  width: 100%;
+  max-width: 480px;
+}
+.contact__info {
+  position: absolute;
+  bottom: 45%;
+  left: 35%;
+  color: var(--color-darkBlue);
+  transform: rotateZ(-90deg);
+  -webkit-transform: rotateZ(-90deg);
+  -moz-transform: rotateZ(-90deg);
+  -ms-transform: rotateZ(-90deg);
+  -o-transform: rotateZ(-90deg);
+}
+.first {
+  font-family: Sharp Sans No1 Medium Italic;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 39px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.last {
+  font-family: Diodrum Arabic;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: -2px;
+  text-align: left;
+  white-space: nowrap;
+}
+.contact__right {
+  padding: 3rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.contact__right h4 {
+  color: var(--color-darkBlue);
+  max-width: 400px;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Sharp Sans No1 Medium;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px; /* 161.111% */
+}
+form {
+  padding: 1rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+input:not([type="checkbox"]),
+textarea,
+select {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border-bottom: 2px solid #646464;
+  resize: none;
+  caret-color: var(--color-darkBlue);
+}
+textarea {
+  height: 53px;
+  overflow-wrap: break-word;
+}
+select {
+  cursor: pointer;
+  color: var(--color-darkBlue);
+}
+input:not([type="checkbox"])::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: var(--color-darkBlue);
+  font-family: Sharp Sans No1 Medium Italic;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5625rem;
+}
+
+.check__box {
+  cursor: pointer;
+  display: flex;
+  gap: 2rem;
+}
+.check__box input {
+  cursor: pointer;
+}
+.check__box label {
+  cursor: pointer;
+  color: #646464;
+  font-family: Sharp Sans No1 Book;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5625rem;
+}
+.submit-btn {
+  padding: 1.5rem 3rem;
+  max-width: 13.8125rem;
+  max-height: 3.125rem;
+  border: 2px solid transparent;
+  background-color: var(--color-darkBlue) !important;
+  color: var(--color-white) !important;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.submit-btn:hover {
+  border: 2px solid var(--color-darkBlue) !important;
+  color: var(--color-black) !important;
+  background-color: var(--color-white) !important;
+}
+.error__msg {
+  color: red;
+  margin-top: -1rem;
+  height: 1.2rem;
+}
+
+.afterMessage {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  white-space: pre-line;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+  width: auto;
+  max-width: 400px;
+  padding: 10px 20px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.success {
+  background-color: green;
+}
+.error {
+  background-color: red;
+}
+/* wide screen */
+@media (min-width: 1920px) {
+  .contact__left img {
+    width: 100%;
+  }
+  form {
+    padding: 2rem 0 0;
+    gap: 1rem;
+  }
+}
+/* tablets */
+@media (max-width: 1024px) {
+  .contact__container {
+    flex-direction: column;
+  }
+  .contact__left {
+    display: none;
+  }
+  .contact__right {
+    width: 100%;
+  }
+}
+
+/* phones */
+@media (max-width: 600px) {
+  form {
+    padding: 2rem 0;
+  }
+  #contact > h2 {
+    padding: 2rem;
+  }
+}

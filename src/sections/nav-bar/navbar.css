@@ -1,0 +1,159 @@
+/* navbar.css */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  padding: 3rem 4rem 3rem 5rem;
+  z-index: 1000;
+  transform: translateY(0);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+.navbar.bg-color {
+  background-image: url("../../assets/Makadi_Heights_background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+.navbar.navbar-hide {
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+}
+.left {
+  display: flex;
+  justify-content: center;
+}
+
+.left img {
+  width: 100px;
+  height: 50px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.weather {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.weather p {
+  font-family: "Diodrum Arabic", sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.weather-icon {
+  font-size: 2rem;
+}
+
+.phone {
+  width: 30px;
+}
+
+nav button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 0.2rem 0.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Shanti;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu .burger-icon {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.menu p {
+  margin: 0;
+  font-family: "Diodrum Arabic", sans-serif;
+  font-size: 17px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .right {
+    margin-right: 0;
+  }
+}
+/* phones */
+@media (max-width: 600px) {
+  .navbar {
+    max-width: 90%;
+    margin: auto;
+    top: 80%;
+    padding: 1rem;
+    background-color: var(--color-darkBlue);
+    opacity: 0.9;
+    background-image: none !important;
+    border-radius: 15%;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
+  }
+  .navbar.navbar-hide {
+    opacity: 0;
+    transform: translateY(200%);
+    -webkit-transform: translateY(200%);
+    -moz-transform: translateY(200%);
+    -ms-transform: translateY(200%);
+    -o-transform: translateY(200%);
+  }
+  .menu p {
+    display: none;
+  }
+  nav button {
+    display: none;
+  }
+}

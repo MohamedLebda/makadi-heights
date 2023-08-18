@@ -1,0 +1,40 @@
+.card {
+  background: var(--color-white);
+  padding: 1.5rem;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-1);
+  transition: var(--transition);
+  -webkit-border-radius: var(--border-radius-1);
+  -moz-border-radius: var(--border-radius-1);
+  -ms-border-radius: var(--border-radius-1);
+  -o-border-radius: var(--border-radius-1);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.card:hover {
+  background: transparent;
+  border-color: var(--color-white);
+  transform: translateY(-0.5rem);
+  -webkit-transform: translateY(-0.5rem);
+  -moz-transform: translateY(-0.5rem);
+  -ms-transform: translateY(-0.5rem);
+  -o-transform: translateY(-0.5rem);
+}
+
+.card.light {
+  background: var(--color-light);
+}
+
+.card.card.light:hover {
+  background: transparent;
+  border-color: var(--color-light);
+}
+/* phones */
+@media (max-width: 600px) {
+  .card {
+    padding: 1.2rem;
+  }
+}
