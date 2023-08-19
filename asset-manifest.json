@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/makadi-heights/static/css/main.f5d07df0.css",
-    "main.js": "/makadi-heights/static/js/main.fa163d55.js",
+    "main.css": "/makadi-heights/static/css/main.234d89c8.css",
+    "main.js": "/makadi-heights/static/js/main.29f636fd.js",
     "static/media/Makadi_Heights_background.png": "/makadi-heights/static/media/Makadi_Heights_background.c495c0a651e31670be20.png",
     "static/media/contact-img.png": "/makadi-heights/static/media/contact-img.5903e1d7e4d38f5f4de4.png",
     "static/media/header-img.png": "/makadi-heights/static/media/header-img.e46d1ab59a733dfe1c4e.png",
@@ -13,11 +13,11 @@
     "static/media/hotels-img.jpg": "/makadi-heights/static/media/hotels-img.5712b43efe2d479fee29.jpg",
     "static/media/commercial-area-img.jpg": "/makadi-heights/static/media/commercial-area-img.b32e03557a327e3d8d20.jpg",
     "index.html": "/makadi-heights/index.html",
-    "main.f5d07df0.css.map": "/makadi-heights/static/css/main.f5d07df0.css.map",
-    "main.fa163d55.js.map": "/makadi-heights/static/js/main.fa163d55.js.map"
+    "main.234d89c8.css.map": "/makadi-heights/static/css/main.234d89c8.css.map",
+    "main.29f636fd.js.map": "/makadi-heights/static/js/main.29f636fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5d07df0.css",
-    "static/js/main.fa163d55.js"
+    "static/css/main.234d89c8.css",
+    "static/js/main.29f636fd.js"
   ]
 }
