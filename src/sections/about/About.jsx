@@ -21,7 +21,7 @@ const About = () => {
           </div>
           <div className="about__cards">
             {data.map((item, index) => (
-              <Card key={item.id} className={`about__card ${currentIndex === index ? 'card__active' : ''}`} onClick={() => handleCircleClick(index)}>
+              <Card key={item.id} className={`about__card ${currentIndex === index ? 'card__active' : ''} about__card${index}`} onClick={() => handleCircleClick(index)}>
                 <span className="about__card-icon">
                   {item.icon}
                 </span>

@@ -52,6 +52,10 @@
   color: var(--color-lightBlue);
   border-bottom: 1px solid var(--color-lightGray);
 }
+.card.about__card1 img {
+  filter: brightness(2);
+  -webkit-filter: brightness(2);
+}
 .card.about__card:nth-child(odd) {
   border-right: 1px solid var(--color-lightGray);
 }
@@ -65,6 +69,7 @@
   filter: brightness(0.5) hue-rotate(30deg);
   -webkit-filter: brightness(0.5) hue-rotate(30deg);
 }
+
 .about__card-icon {
   width: fit-content;
   margin-inline: auto;
