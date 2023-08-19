@@ -70,6 +70,7 @@ header button {
 @media (min-width: 1920px) {
   .header__container {
     max-width: 1200px !important;
+    margin: auto;
   }
   .header__img {
     max-width: 550px;
@@ -79,7 +80,7 @@ header button {
     max-width: 600px;
   }
   .header__info h3 {
-    font-family: Diodrum Arabic;
+    font-family: "Diodrum Arabic", sans-serif;
     font-size: 80px;
     font-weight: 400;
     line-height: 88px;
@@ -88,7 +89,7 @@ header button {
   }
 
   .header__info p {
-    font-family: Sharp Sans No1 Medium;
+    font-family: "Sharp Sans No1 Medium", sans-serif;
     font-size: 22px;
     font-weight: 300;
     line-height: 36px;
@@ -106,17 +107,18 @@ header button {
     max-height: 250px;
   }
   .header__info h3 {
-    font-family: Diodrum Arabic;
+    font-family: "Diodrum Arabic", sans-serif;
     font-size: 40px;
     font-weight: 300;
     line-height: 44px;
     letter-spacing: 0px;
+
     text-align: left;
     display: inline-block;
   }
 
   .header__info p {
-    font-family: Sharp Sans No1 Medium;
+    font-family: "Sharp Sans No1 Medium", sans-serif;
     font-size: 11px;
     font-weight: 300;
     line-height: 18px;
@@ -138,17 +140,18 @@ header button {
     width: 90vw;
   }
   .header__info h3 {
-    font-family: Diodrum Arabic;
+    font-family: "Diodrum Arabic", sans-serif;
     font-size: 30px;
     font-weight: 300;
     line-height: 33px;
     letter-spacing: 0px;
+    margin-right: 5px;
     text-align: left;
     display: inline-block;
   }
 
   .header__info p {
-    font-family: Sharp Sans No1 Medium;
+    font-family: "Sharp Sans No1 Medium", sans-serif;
     font-size: 9px;
     font-weight: 300;
     line-height: 12px;

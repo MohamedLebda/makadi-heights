@@ -51,7 +51,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${changeNavbarColor ? 'bg-color' : ''} ${toggleNavbar? 'navbar-hide': ''}`}>
       <div className="left">
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo"  className='logo'/>
       </div>
       <div className="right">
         <div className="weather">

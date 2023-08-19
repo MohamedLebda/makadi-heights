@@ -20,7 +20,10 @@
   /* general transition variable */
   --transition: all 500ms ease;
 }
-
+@font-face {
+  font-family: "Diodrum Arabic";
+  src: url("./fonts/diodrum-arabic.ttf") format("truetype");
+}
 html {
   scroll-behavior: smooth;
 }
