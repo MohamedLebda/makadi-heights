@@ -7,7 +7,7 @@ const About = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleCircleClick = (index) => {
-    setCurrentIndex(index);
+    setCurrentIndex(index === currentIndex ? 0 : index); 
   };
 
   return (
@@ -21,7 +21,7 @@ const About = () => {
           </div>
           <div className="about__cards">
             {data.map((item, index) => (
-              <Card key={item.id} className="about__card" onClick={() => handleCircleClick(index)}>
+              <Card key={item.id} className={`about__card ${currentIndex === index ? 'card__active' : ''}`} onClick={() => handleCircleClick(index)}>
                 <span className="about__card-icon">
                   {item.icon}
                 </span>

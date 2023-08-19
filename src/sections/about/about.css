@@ -56,8 +56,14 @@
   border-right: 1px solid var(--color-lightGray);
 }
 
-.card.about__card:hover {
+.card.about__card:hover,
+.card.card__active {
   color: var(--color-darkBlue);
+}
+.card.about__card:hover img,
+.card.card__active img {
+  filter: brightness(0.5) hue-rotate(30deg);
+  -webkit-filter: brightness(0.5) hue-rotate(30deg);
 }
 .about__card-icon {
   width: fit-content;
